@@ -8,20 +8,20 @@
             <div class="order-2 xl:order-none">
                 <p v-for="paragraph in content.autobiography">{{ paragraph }}<br/><br/></p>
                 <div>
-                    <p class="pb-3" :style="{ color: textSub }">Hard Skills</p>
+                    <!-- <p class="pb-3" :style="{ color: textSub }">Hard Skills</p>
                     <ul class="flow flow-col list-['\2705'] pl-6 sm:grid sm:grid-rows-2 sm:grid-flow-col gap-8">
                         <li v-for="tech in content.techStack" class="pl-2">{{ tech }}</li>
-                    </ul>
+                    </ul> -->
                 </div>
 
                 <div>
-                    <p class="pb-3" :style="{ color: textSub }">Soft Skills</p>
+                    <!-- <p class="pb-3" :style="{ color: textSub }">Soft Skills</p>
     <ul class="flow flow-col list-['\2705'] pl-6 sm:grid sm:grid-rows-2 sm:grid-flow-col gap-4">
       <li v-for="skill in content.softSkills" :key="skill" class="pl-2">{{ skill }}</li>
-    </ul>
+    </ul> -->
                 </div>
             </div>
-            <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
+            <div class="grid gap-y-4 order-1 xl:order-none">
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
                         <img :src="getImageUrl(content.photo1Link)" class="shadow-md" loading="lazy"/>

@@ -1,7 +1,7 @@
 <template>
     <nav class="block w-full sticky top-0 z-10 transition-all duration-300" :class="{ '-translate-y-full absolute': !showNavbar }" id="navbar">
         <!-- Navbar Body -->
-        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white/[.9] dark:bg-slate-900 backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg dark:bg-slate-900/[.8]': !hideNavShadow }">
+        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white dark:bg-black backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg dark:bg-slate-900/[.8]': !hideNavShadow }">
             <!-- Logo -->
             <router-link to="/#landing-page">
                 <div :class="['transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
@@ -44,7 +44,7 @@
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <a :href="portfolio.greeting.resumeLink" target="_blank">
-                            <button class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white duration-300">Resume</button>
+                            <button class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white duration-300">Curriculo</button>
                         </a>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
@@ -61,7 +61,7 @@
 
         <!-- Navbar Dropdown Area -->
         <NavTransition>
-            <div v-show="dropDownActive" class="block w-full absolute xl:hidden px-9 pb-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm">
+            <div v-show="dropDownActive" class="block w-full absolute xl:hidden px-9 pb-4 bg-white/[.9] dark:bg-black backdrop-blur-sm">
                 <ul>
                     <li>
                         <router-link class="block py-5  hover:text-link-color" to="/#about-section">😎 Sobre</router-link>

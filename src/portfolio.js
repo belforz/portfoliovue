@@ -56,11 +56,6 @@ const about = {
         "CSS",
         "SQL Language",
         "No-SQL"
-    ], softSkills: [
-        "Comunicação",
-        "Coletividade",
-        "Sociabilidade",
-        "Proatividade",
     ],
     photo1Link: "images/portrato1.jpg",
     photo2Link: "images/portrato2.jpg",
@@ -68,6 +63,41 @@ const about = {
     
 }
 
+// --💪🤝--- Skills Section ---
+
+
+const skills = {
+    hardSkills: [
+        "PHP",
+        "Java",
+        "PHP",
+        "Java",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Python",
+        "Noções de C & C++ & Ruby",
+        "React",
+        "ReactNative",
+        "Vue.js",
+        "Node,js",
+        "Springboot",
+        "IntelliJeA",
+        "Android Studio",
+        "SQL Language",
+        "No-SQL",
+        "Ingles",
+        "Espanhol"
+    ], softSkills:[
+        "Sociabilidade",
+        "Comunicação",
+        "Trabalho em Grupo",
+        "Inovação",
+        "Curiosidade",
+        "Proatividade"
+    ]
+}
+  
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
@@ -134,7 +164,7 @@ const works = [
     {
         projectName: "BaixaCNPJ",
         yearCompleted: "2024",
-        description: "Site de venda para a finalização de processos de CNPJ",
+        description: "Site de venda para a finalização de processos de CNPJ, dimuinuindo etapas com a utilização de UX design para atração de publico.",
         techStack: "JavaScript, CSS, HTML & PHP",
         links: [
             {
@@ -144,29 +174,29 @@ const works = [
             },
             
         ],
-        imageLink: "images/tracksubs_pic.png",
+        imageLink: "images/baixacnpj.png",
         alignLeft: false
     },
     {
         projectName: "LimpaNome",
         yearCompleted: "2023/2024",
-        description: "Site de venda para a limpeza de nome, abreviando processos",
+        description: "Uma interface mais atraente para a limpeza de nome, abreviando processos",
         techStack: "PHP, HTML, CSS, JS",
         links: [
             {
                 label: "",
-                type: "external",
+                type: "git",
                 url: "https://github.com/belforz/LimpaNome"
             }
         ],
-        imageLink: "images/",
+        imageLink: "images/Zaion.png",
         alignLeft: true
     },
     {
         projectName: "Bom Vizinho",
         yearCompleted: "2023",
         description: "Um web aplicativo de serviços voluntários para idosos",
-        techStack: "HTML, CSS, JS, Java, Postgree, vercel",
+        techStack: "HTML, CSS, JS, Java, Postgree, Vercel, SwaggerUi",
         links: [
             {
                 label: "",
@@ -174,10 +204,13 @@ const works = [
                 url: "https://github.com/belforz/voluntariado-site"
             },
             {
+            label: "",
+            type: "external",
+            url: "sistemas-bomvizinho.com.br"
         
             }
         ],
-        imageLink: "images/sudoku_pic.png",
+        imageLink: "images/BomVizinho.png",
         alignLeft: false
     },
 
@@ -191,8 +224,8 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Atualmente na procura de estágio ou vaga junior",
-            "Também a procura de projetos em time "
+            "Atualmente na procura de estágio ou vaga junior,",
+            "Também a procura de projetos em time. "
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "macedobeiramar@hotmail.com", // email takes precedance
@@ -213,5 +246,8 @@ export default {
     experiences,
     works,
     archiveLink,
-    contact
+    contact, skills
+    
+    
+    
 }

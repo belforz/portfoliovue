@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center absolute z-50 bg-white text-black dark:bg-slate-900 dark:text-slate-300 text-center w-screen h-screen">
+    <div class="flex items-center justify-center absolute z-50 bg-white text-black dark:bg-black dark:text-slate-300 text-center w-screen h-screen">
         <div>
             <div class="flex w-full space-x-2 items-center">
                 <div class="flex w-full relative items-center justify-between py-4">
@@ -26,9 +26,9 @@ const hashtags = ref([]);
 const message = computed(() => {
     switch (status.value) {
         case 0:
-            return "🤔 LOADING..."
+            return "😶‍🌫️ Carregando..."
         case 1:
-            return "🚀 SUCCESS!"
+            return "🤯Sucesso!"
     }
 })
 const percentage = computed(() => {
