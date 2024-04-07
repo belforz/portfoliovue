@@ -1,1 +1,1 @@
-
+Projeto de portfólio redirecionado ao resumo do meu aprendizado até agora, além das minhas experiencias de vida e profissional. Totalmente feito em Vue.js e continuará sendo alimentado com os conhecimentos que adquirir ao longo da jornada de estudos. Este é uma atualização 2.0 do meu antigo portfolio 
