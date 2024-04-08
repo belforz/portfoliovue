@@ -26,7 +26,7 @@ const greeting = {
     name: "Leandro Belfor",
     message: "Sou estudande de Análise e Desenvolvimento de Sistemas, cai de paraquedas nesse mundo digital e olha que até que meu pouso foi bem, que tal conhecer-lo?",
     basedLocation: "São Paulo, SP",
-    resumeLink: "https://drive.google.com/file/d/1sZgWa7ci0kqp5B7GTsy4UuKk6jm7hpY5/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1qfaXldO9Ih7YUhdrHFlKLcZhoD6AxmGk/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         // link: "images/logo1.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
