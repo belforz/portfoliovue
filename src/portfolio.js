@@ -100,6 +100,28 @@ const skills = {
   
 // --- 🛡️ Experience Section ---
 const experiences = [
+
+    {
+        position: "Desenvolvedor Freelancer",
+        company: {
+            name: "Grupo R&M Administração.",
+            
+        },
+        duration: "Mai 2024 - Mai 2024",
+        bulletPoints: [
+           "Construção e Desenvolvimento de um site que atualiza a nova imagem e estrutura da empresa", 
+            "de acordo com os designs elaborados, com seu aspectos minimalistas", 
+            "através de tecnologias como PHP, JS e CSS."
+        ],
+        hashtags: [
+            "PHP",
+            "locaweb",
+            "JS",
+            "CSS",
+            "HTML",
+            
+        ]
+    },
     {
         position: "Desenvolvedor Freelancer",
         company: {
@@ -108,7 +130,7 @@ const experiences = [
         },
         duration: "Dez 2023 - Março 2024",
         bulletPoints: [
-            "Planejamento e Estruturação de um site para a limpeza de nome de pessoas em inadimplência com utilização de tecnologia JavaScript, HTML e CSS com mascaramento de rotas além de um serviço para o cancelamentode CPNJ, seguindo as boas práticas do mercado.",
+            "Planejamento e Estruturação de sites para a limpeza de nome de pessoas em inadimplência com utilização de tecnologia JavaScript, HTML e CSS com mascaramento de rotas além de um serviço para o cancelamentode CPNJ, seguindo as boas práticas do mercado.",
             "Estilo em landing page ecom utilização das tecnologias SCSS, JavaScript e HTML",
             "Hospedagem de contéudo e UX Design"
         ],
@@ -162,29 +184,48 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "BaixaCNPJ",
+        projectName: "R&M Administração",
         yearCompleted: "2024",
-        description: "Site de venda para a finalização de processos de CNPJ, dimuinuindo etapas com a utilização de UX design para atração de publico.",
+        description: "Com seus aspectos minimalistas, através de tecnologias como PHP, JS e CSS, uma atualização do site da empresa envolvendo práticas de UX design",
         techStack: "JavaScript, CSS, HTML & PHP",
         links: [
             {
-                label: "",
+                label: "GitHub",
                 type: "git",
-                url: "https://github.com/belforz/baixaCNPJ"
+                url: "https://github.com/belforz/rmadministracao"
             },
-            
+            {
+                label: "Website",
+                type: "external",
+                url: "https://rmadministracao.com.br"
+            }
         ],
-        imageLink: "images/baixacnpj.png",
-        alignLeft: false
+        imageLink: "images/r&m.png",
+        alignLeft: true
     },
+    // {
+    //     projectName: "BaixaCNPJ",
+    //     yearCompleted: "2023",
+    //     description: "Site de venda para a finalização de processos de CNPJ, diminuindo etapas com a utilização de UX design para atração de público.",
+    //     techStack: "JavaScript, CSS, HTML & PHP",
+    //     links: [
+    //         {
+    //             label: "GitHub",
+    //             type: "git",
+    //             url: "https://github.com/belforz/baixaCNPJ"
+    //         }
+    //     ],
+    //     imageLink: "images/baixaCPNJ.png",
+    //     alignLeft: false
+    // },
     {
         projectName: "LimpaNome",
-        yearCompleted: "2023/2024",
-        description: "Uma interface mais atraente para a limpeza de nome, abreviando processos",
+        yearCompleted: "2024",
+        description: "Uma interface mais atraente para a limpeza de nome, abreviando processos.",
         techStack: "PHP, HTML, CSS, JS",
         links: [
             {
-                label: "",
+                label: "GitHub",
                 type: "git",
                 url: "https://github.com/belforz/LimpaNome"
             }
@@ -195,26 +236,25 @@ const works = [
     {
         projectName: "Bom Vizinho",
         yearCompleted: "2023",
-        description: "Um web aplicativo de serviços voluntários para idosos",
-        techStack: "HTML, CSS, JS, Java, Postgree, Vercel, SwaggerUi",
+        description: "Um web aplicativo de serviços voluntários para idosos.",
+        techStack: "HTML, CSS, JS, Java, PostgreSQL, Vercel, SwaggerUi",
         links: [
             {
-                label: "",
+                label: "GitHub",
                 type: "git",
                 url: "https://github.com/belforz/voluntariado-site"
             },
             {
-            label: "",
-            type: "external",
-            url: "sistemas-bomvizinho.com.br"
-        
+                label: "Website",
+                type: "external",
+                url: "https://sistemas-bomvizinho.com.br"
             }
         ],
         imageLink: "images/BomVizinho.png",
         alignLeft: false
-    },
+    }
+];
 
-]
 
 const archiveLink = "https://github.com/belforz?tab=repositories"
 
