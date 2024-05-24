@@ -201,23 +201,25 @@ const works = [
             }
         ],
         imageLink: "images/r&m.png",
-        alignLeft: true
+        alignLeft: true,
+        isImportant: false
     },
-    // {
-    //     projectName: "BaixaCNPJ",
-    //     yearCompleted: "2023",
-    //     description: "Site de venda para a finalização de processos de CNPJ, diminuindo etapas com a utilização de UX design para atração de público.",
-    //     techStack: "JavaScript, CSS, HTML & PHP",
-    //     links: [
-    //         {
-    //             label: "GitHub",
-    //             type: "git",
-    //             url: "https://github.com/belforz/baixaCNPJ"
-    //         }
-    //     ],
-    //     imageLink: "images/baixaCPNJ.png",
-    //     alignLeft: false
-    // },
+    {
+        projectName: "BaixaCNPJ",
+        yearCompleted: "2024",
+        description: "Site de venda para a finalização de processos de CNPJ, diminuindo etapas com a utilização de UX design para atração de público.",
+        techStack: "JavaScript, CSS, HTML & PHP",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/baixaCNPJ"
+            }
+        ],
+        imageLink: "images/baixacnpj.png",
+        alignLeft: false,
+        isImportant: false
+    },
     {
         projectName: "LimpaNome",
         yearCompleted: "2024",
@@ -231,7 +233,8 @@ const works = [
             }
         ],
         imageLink: "images/Zaion.png",
-        alignLeft: true
+        alignLeft: true,
+        isImportant: false
     },
     {
         projectName: "Bom Vizinho",
@@ -251,15 +254,26 @@ const works = [
             }
         ],
         imageLink: "images/BomVizinho.png",
-        alignLeft: false
-    }
+        alignLeft: false,
+        isImportant: true
+    },
+    {
+    computed: {
+        sortedWorks() {
+            // Movendo o projeto importante para o topo
+            return this.content.slice().sort((a, b) => b.isImportant - a.isImportant);
+        },
+        projInitial() {
+            // Exibe inicialmente os primeiros projetos importantes e os normais
+            return this.sortedWorks.slice(0, 2); // Exemplo de corte inicial
+        }}}
 ];
 
 
 const archiveLink = "https://github.com/belforz?tab=repositories"
 
 // --- 📭 Contact Section ---
-// 2 Options available - Choose 1
+
 const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
