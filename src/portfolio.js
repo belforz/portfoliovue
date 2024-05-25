@@ -67,9 +67,8 @@ const about = {
 
 
 const skills = {
+    el:'#idente',
     hardSkills: [
-        "PHP",
-        "Java",
         "PHP",
         "Java",
         "JavaScript",
@@ -95,7 +94,12 @@ const skills = {
         "Inovação",
         "Curiosidade",
         "Proatividade"
-    ]
+    ],
+    methods: {
+      getSkillClass(skill) {
+        return skill.toLowerCase().replace(/[^a-z]/g, '-'); // Converts skill to class name, e.g., 'PHP' -> 'php'
+      }
+    }
 }
   
 // --- 🛡️ Experience Section ---

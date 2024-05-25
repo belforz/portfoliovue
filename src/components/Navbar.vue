@@ -1,13 +1,14 @@
 <template>
     <nav class="block w-full sticky top-0 z-10 transition-all duration-300" :class="{ '-translate-y-full absolute': !showNavbar }" id="navbar">
         <!-- Navbar Body -->
-        <div class="flex flex-wrap items-center justify-between px-9 md:py-4 bg-white dark:bg-black backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg dark:bg-slate-900/[.8]': !hideNavShadow }">
+        <div class="flex items-start md:items-center md:flex-wrap md:justify-between xl:justify-center px-9 md:py-4 bg-white dark:bg-black backdrop-blur-sm transition-shadow duration-300" :class="{ 'shadow-lg dark:bg-black/[.8]': !hideNavShadow }">
+
             <!-- Logo -->
             <router-link to="/#landing-page">
-                <div :class="['transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
+                <!-- <div :class="['transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
                     <div v-if="!portfolio.greeting.logo.custom">
                         <img :src="getImageUrl(portfolio.greeting.logo.link)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
-                    </div>
+                    </div> -->
                     <!-- Custom Logo -->
                     <!-- <div v-else>
                         <div class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
@@ -16,7 +17,7 @@
                             <p>/></p>
                         </div>
                     </div> -->
-                </div>
+                <!-- </div> -->
             </router-link>
 
             <button @click="dropDownActive = !dropDownActive" :class="['inline-flex items-center p-2 ml-3 text-sm text-gray-500 xl:hidden transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
