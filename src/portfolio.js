@@ -201,7 +201,7 @@ const works = [
             {
                 label: "Website",
                 type: "external",
-                url: "https://rmadministracao.com.br"
+                url: "https://remadministracao.com.br"
             }
         ],
         imageLink: "images/r&m.png",
