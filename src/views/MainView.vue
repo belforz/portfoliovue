@@ -22,7 +22,8 @@
 					</ul>
 				</div>
 				<div class="col-span-4 flex-1 flex-col order-1 md:order-none">
-					<div class="container mx-auto max-w-full 2xl:max-w-6xl">
+							<div class="container mx-auto max-w-full 2xl:max-w-6xl">
+					
 						<LandingView :content="portfolio.greeting" :show-transition="showLanding"/>
 
 						<AboutView :content="portfolio.about" :transitions="portfolio.transitions" />
@@ -44,6 +45,9 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- PopUp Component -->
+	<PopUp :visible="popUpVisible" href="https://belforzphotography.vercel.app" text="Conheça o meu novo projeto de fotos" :showLanding="showLanding" @update:visible="popUpVisible = $event" />
 </template>
 
 <script setup>
@@ -58,6 +62,7 @@ import WorkView from './WorkView.vue'
 import ContactView from './ContactView.vue'
 import SplashView from './SplashView.vue'
 import SkillsView from './SkillsView.vue'
+import PopUp from '@/components/PopUp.vue'
 
 import portfolio from '../portfolio'
 
@@ -66,6 +71,7 @@ const router = useRouter()
 const showingSplash = ref(portfolio.splashScreen)
 const showLanding = ref(!(portfolio.transitions.active || portfolio.transitions.onlyLanding))
 const darkModeActive = ref(false)
+const popUpVisible = ref(true)  // Control the visibility of the popup
 
 onMounted(() => {
 	splashScreen()
