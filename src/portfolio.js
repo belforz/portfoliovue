@@ -188,6 +188,27 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
+        projectName: "Fotografias",
+        yearCompleted: "2024",
+        description: "Um olhar fotogênico e criativo sobre o mundo, este projeto visa atender a um almejo pessoal que inspira os meus conhecimentos técnicos dentro do mundo da Tecnologia",
+        techStack: "JavaScript, Vue.js, TailwindCSS",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/portfoliophotos"
+            },
+            {
+                label: "Website",
+                type: "external",
+                url: "https://belforzphotography.vercel.app"
+            }
+        ],
+        imageLink: "images/Photographies.png",
+        alignLeft: false,
+        isImportant: false
+    },
+    {
         projectName: "R&M Administração",
         yearCompleted: "2024",
         description: "Com seus aspectos minimalistas, através de tecnologias como PHP, JS e CSS, uma atualização do site da empresa envolvendo práticas de UX design",
@@ -260,7 +281,7 @@ const works = [
         imageLink: "images/BomVizinho.png",
         alignLeft: false,
         isImportant: true
-    },
+    }, 
     {
     computed: {
         sortedWorks() {
