@@ -10,7 +10,12 @@
 					<ul class="md:fixed md:bottom-20 md:left:0 md:right:0 mb-7 flex items-center space-x-8 md:flex-col md:space-y-4 md:space-x-0">
 						<li v-show="githubLink" :class="['transition-all motion-reduce:transition-none duration-500', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
 							<a :href="githubLink" target="_blank">
-								<font-awesome-icon icon="fa-brands fa-github" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"></font-awesome-icon>
+
+								<!-- Imagem preta para o modo claro -->
+								<img src="/src/assets/svg/github-icon-novo.svg" class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:hidden dark:text-slate-300" style="fill: currentColor;"></img>
+
+								<!-- Imagem preta para o modo escuro -->
+								<img src="/src/assets/images/github-copilot-branco.png" class="h-8 w-8 md:h-12 md:w-12 hidden dark:block text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300" style="fill: currentColor;"></img>
 							</a>
 						</li>
 						<li v-show="linkedinLink" :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showLanding ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">

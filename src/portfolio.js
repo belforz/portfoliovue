@@ -59,15 +59,15 @@ const about = {
     ],
     photo1Link: "images/portrato1.jpg",
     photo2Link: "images/portrato2.jpg",
-    
-    
+
+
 }
 
 // --💪🤝--- Skills Section ---
 
 
 const skills = {
-    el:'#idente',
+    el: '#idente',
     hardSkills: [
         "PHP",
         "Java",
@@ -87,7 +87,7 @@ const skills = {
         "No-SQL",
         "Ingles",
         "Espanhol"
-    ], softSkills:[
+    ], softSkills: [
         "Sociabilidade",
         "Comunicação",
         "Trabalho em Grupo",
@@ -96,26 +96,72 @@ const skills = {
         "Proatividade"
     ],
     methods: {
-      getSkillClass(skill) {
-        return skill.toLowerCase().replace(/[^a-z]/g, '-'); // Converts skill to class name, e.g., 'PHP' -> 'php'
-      }
+        getSkillClass(skill) {
+            return skill.toLowerCase().replace(/[^a-z]/g, '-'); // Converts skill to class name, e.g., 'PHP' -> 'php'
+        }
     }
 }
-  
+
 // --- 🛡️ Experience Section ---
 const experiences = [
+
+    {
+        position: "Estágiario em Inteligência Artificial",
+        company: {
+            name: "Vivo(Telefônica Brasil).",
+
+        },
+        duration: "Set 2024 - (Atualmente)",
+        bulletPoints: [
+            "Manuntenção e Ampliação de Novos Negócios envolvendo Inteligência Artificial",
+            "Comunicando-se com tecnologias como Python, Node.js, React e outras",
+            "Integração com diversas áreas dentro da Vivo, aplica-se comunicação de áreas e versionamento de projetos"
+        ],
+        hashtags: [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Jenkins",
+            "Python", "Docker", "Postman", "Github"
+
+
+        ]
+    },
+
+    {
+        position: "Técnico em Infraestrutura de Redes Freelancer",
+        company: {
+            name: "iT Solutions Zona Sul.",
+
+        },
+        duration: "Jun 2024 - Set 2024",
+        bulletPoints: [
+            "Manuseamento de cabos na rede fixa/portable;",
+            " Manutenção de redes físicas e virtuais, além de teste pós vendas",
+            
+        ],
+        hashtags: [
+            "Redes",
+            "Cabeamentos",
+            "Protocolos",
+            "Manunteção",
+           
+
+
+        ]
+    },
 
     {
         position: "Desenvolvedor Freelancer",
         company: {
             name: "Grupo R&M Administração.",
-            
+
         },
         duration: "Mai 2024 - Mai 2024",
         bulletPoints: [
-           "Construção e Desenvolvimento de um site que atualiza a nova imagem e estrutura da empresa", 
-            "de acordo com os designs elaborados, com seu aspectos minimalistas", 
-            "através de tecnologias como PHP, JS e CSS."
+            "Construção e Desenvolvimento de um site que atualiza a nova imagem e estrutura da empresa",
+            "De acordo com os designs elaborados, com seu aspectos minimalistas",
+            "Através de tecnologias como PHP, JS e CSS."
         ],
         hashtags: [
             "PHP",
@@ -123,14 +169,14 @@ const experiences = [
             "JS",
             "CSS",
             "HTML",
-            
+
         ]
     },
     {
         position: "Desenvolvedor Freelancer",
         company: {
             name: "Time Solutions LTDA.",
-            
+
         },
         duration: "Dez 2023 - Março 2024",
         bulletPoints: [
@@ -144,7 +190,7 @@ const experiences = [
             "JavaScript",
             "Vue.js",
             "HTML",
-            
+
         ]
     },
     {
@@ -153,6 +199,22 @@ const experiences = [
             name: "AGA CARNEIRO RESTAURANTE",
         },
         duration: "Jun 2022 - Maio 2024",
+        bulletPoints: [
+            "Atendimento ao Cliente, Recepção",
+            "Comunicação em Inglês para Estrangeiros.",
+        ],
+        hashtags: [
+            "Inglês",
+            "Comunicação",
+            "Trabalho em Grupo",
+            "Dinâmica Social"
+        ]
+    }, {
+        position: "Garçom",
+        company: {
+            name: "Madero Industria & Comércio",
+        },
+        duration: "Dez 2019 - Fev 2022",
         bulletPoints: [
             "Atendimento ao Cliente, Recepção",
             "Comunicação em Inglês para Estrangeiros.",
@@ -281,17 +343,19 @@ const works = [
         imageLink: "images/BomVizinho.png",
         alignLeft: false,
         isImportant: true
-    }, 
+    },
     {
-    computed: {
-        sortedWorks() {
-            // Movendo o projeto importante para o topo
-            return this.content.slice().sort((a, b) => b.isImportant - a.isImportant);
-        },
-        projInitial() {
-            // Exibe inicialmente os primeiros projetos importantes e os normais
-            return this.sortedWorks.slice(0, 2); // Exemplo de corte inicial
-        }}}
+        computed: {
+            sortedWorks() {
+                // Movendo o projeto importante para o topo
+                return this.content.slice().sort((a, b) => b.isImportant - a.isImportant);
+            },
+            projInitial() {
+                // Exibe inicialmente os primeiros projetos importantes e os normais
+                return this.sortedWorks.slice(0, 2); // Exemplo de corte inicial
+            }
+        }
+    }
 ];
 
 
@@ -303,12 +367,12 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Atualmente na procura de estágio ou vaga junior,",
-            "Também a procura de projetos em time. "
+            "Atualmente no estágio dentro da Vivo(Telefônica Brasil)",
+            "aberto a projetos em time. "
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "macedobeiramar@hotmail.com", // email takes precedance
-            
+
         },
         responseTimeMessage: "... e eu vou lhe responder dentro de 24 horas"
     },
@@ -326,7 +390,7 @@ export default {
     works,
     archiveLink,
     contact, skills
-    
-    
-    
+
+
+
 }
