@@ -138,14 +138,14 @@ const experiences = [
         bulletPoints: [
             "Manuseamento de cabos na rede fixa/portable;",
             " Manutenção de redes físicas e virtuais, além de teste pós vendas",
-            
+
         ],
         hashtags: [
             "Redes",
             "Cabeamentos",
             "Protocolos",
             "Manunteção",
-           
+
 
 
         ]
@@ -249,6 +249,23 @@ const experiences = [
 
 // --- 💻 Work Section ---
 const works = [
+
+    {
+        projectName: "Obranet",
+        yearCompleted: "2024",
+        description: "🚧 Gestor de Obras: Projeto acadêmico que automatiza a gestão de clientes, funcionários e obras no Excel. Com cadastro, edição, pesquisa e exclusão, une teoria e prática para simplificar processos.",
+        techStack: "Excel, Visual Basic Application (VBA)",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/projeto-final-pmi"
+            }
+        ],
+        imageLink: "images/obranet.png",
+        alignLeft: true,
+        isImportant: false
+    },
     {
         projectName: "Fotografias",
         yearCompleted: "2024",
