@@ -57,8 +57,8 @@ const about = {
         "SQL Language",
         "No-SQL"
     ],
-    photo1Link: "images/portrato1.jpg",
-    photo2Link: "images/portrato2.jpg",
+    photo1Link: "images/azul.jpg",
+    photo2Link: "images/azul2.jpg",
 
 
 }

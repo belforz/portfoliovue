@@ -1,6 +1,6 @@
 {
   "name": "portfolio-vue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -22,6 +22,6 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "vite": "^5.1.6"
+    "vite": "^5.4.11"
   }
 }
