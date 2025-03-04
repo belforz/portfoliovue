@@ -37,6 +37,7 @@ const greeting = {
 const socialMediaLinks = {
     github: "https://github.com/belforz",
     linkedin: "https://www.linkedin.com/in/leandro-belfor-ba3640143/",
+    photography: "https://belforzphotography.vercel.app/"
     // medium: "https://medium.com/@mimaishel",
     // stackoverflow: "",
     // xtwitter: "https://twitter.com/mimaishel"
@@ -61,6 +62,11 @@ const about = {
     photo2Link: "images/azul2.jpg",
 
 
+}
+
+const iconsImages = {
+    userImage: "/user-me.png",
+    botImage: "/bot-me.png",
 }
 
 // --💪🤝--- Skills Section ---
@@ -249,6 +255,22 @@ const experiences = [
 
 // --- 💻 Work Section ---
 const works = [
+    {
+        projectName: "Mini Leandro",
+        yearCompleted: "2025",
+        "description": "🤖 Mini Leandro é um chatbot inteligente desenvolvido para interagir de forma natural e dinâmica, utilizando IA generativa. Com um design minimalista e responsivo, ele combina Vue.js e Python para oferecer conversas fluidas e personalizadas. O seu assistente de Portfólio :)",
+        techStack: "Generative AI, Python, Vue.js, Redis, Mongo",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/mini-leandro-back-end"
+            }
+        ],
+        imageLink: "images/mini-leandro.png",
+        alignLeft: false,
+        isImportant: false
+    },
 
     {
         projectName: "Obranet",
@@ -406,7 +428,7 @@ export default {
     experiences,
     works,
     archiveLink,
-    contact, skills
+    contact, skills, iconsImages
 
 
 
