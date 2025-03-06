@@ -26,7 +26,7 @@ const greeting = {
     name: "Leandro Belfor",
     message: "Sou estudande de Análise e Desenvolvimento de Sistemas, cai de paraquedas nesse mundo digital e olha que até que meu pouso foi bem, que tal conhecer-lo?",
     basedLocation: "São Paulo, SP",
-    resumeLink: "https://drive.google.com/file/d/1y9HqXRjA1JSK9Orce1wNlPfQNfynjHO6/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1Vse_fBm4BNYFDmmWuHdPVZCVyq1zQG50/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         // link: "images/logo1.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
@@ -66,7 +66,7 @@ const about = {
 
 const iconsImages = {
     userImage: "/user-me.png",
-    botImage: "/bot-me.png",
+    botImage: "/bot-me-vegeta.png",
 }
 
 // --💪🤝--- Skills Section ---
@@ -75,17 +75,17 @@ const iconsImages = {
 const skills = {
     el: '#idente',
     hardSkills: [
-        "PHP",
-        "Java",
         "JavaScript",
         "HTML",
         "CSS",
         "Python",
-        "Noções de C & C++ & Ruby",
         "React",
         "ReactNative",
         "Vue.js",
         "Node,js",
+        "PHP",
+        "Java",
+        "Noções de C & C++ & Ruby",
         "Springboot",
         "IntelliJeA",
         "Android Studio",
@@ -127,7 +127,7 @@ const experiences = [
             "JavaScript",
             "React",
             "Node.js",
-            "Jenkins",
+            "Argo",
             "Python", "Docker", "Postman", "Github"
 
 
@@ -407,13 +407,13 @@ const contact = {
         shortTitle: "Get in Touch",
         note: [
             "Atualmente no estágio dentro da Vivo(Telefônica Brasil)",
-            "aberto a projetos em time. "
+            "Estou aberto para joint adventures e projetos em time. "
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "macedobeiramar@hotmail.com", // email takes precedance
 
         },
-        responseTimeMessage: "... e eu vou lhe responder dentro de 24 horas"
+        responseTimeMessage: "... e eu vou lhe responder em 24 horas"
     },
     formEmbedLink: "" // inclusion of this link will take precedance
 }
