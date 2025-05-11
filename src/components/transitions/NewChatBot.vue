@@ -1,68 +1,81 @@
 <template>
-  <div class="fixed bottom-4 right-4 w-[95%] max-w-md bg-black text-white border rounded-lg shadow-lg">
+  <!-- Botão flutuante -->
+  <div
+    class="fixed bottom-4 right-4 w-16 h-16 cursor-pointer transition-all duration-500 z-40"
+    @click="toggleChat"
+  >
+    <img
+      :src="botAvatar"
+      alt="Mini Leandro"
+      class="w-full h-full rounded-full shadow-lg border border-white"
+    />
+  </div>
+
+  <!-- Chat flutuante -->
+  <div
+    v-if="isChatOpen"
+    class="fixed bottom-24 right-4 w-[95%] max-w-md bg-black text-white border rounded-lg shadow-lg z-50"
+  >
     <!-- Cabeçalho -->
     <div class="flex items-center justify-between p-3 border-b">
       <h2 class="font-bold">Mini Leandro</h2>
-      <button @click="clearMessages" class="bg-white text-black px-4 py-2 rounded hover:bg-red-200">
+      <button
+        v-if="messages.length > 0"
+        @click="clearMessages"
+        class="bg-white text-black px-3 py-1 rounded hover:bg-red-200 text-sm"
+      >
         Limpar
       </button>
     </div>
 
-    <!-- Introdução inicial -->
-    <div v-if="messages.length === 0" class="flex flex-col items-center text-center px-4 py-6">
-      <img
-        :src="botAvatar"
-        alt="Avatar do bot"
-        class="w-16 h-16 rounded-full border border-white mb-2"
-      />
-      <p class="text-sm text-gray-300">
-        Sou um assistente de inteligência artifcial e estou aqui para ajudar você sobre o Leandro como profissional. Pergunte-me algo =)
-      </p>
-    </div>
+    <!-- Corpo principal -->
+    <div class="flex flex-col p-4 space-y-2 max-h-[60vh] overflow-y-auto">
+      <!-- Introdução -->
+      <div v-if="messages.length === 0" class="flex flex-col items-center text-center px-4 py-6">
+        <img :src="botAvatar" class="w-16 h-16 rounded-full border border-white mb-2" />
+        <p class="text-sm text-gray-300">
+          Sou um assistente de inteligência artificial. Pergunte algo sobre o Leandro como profissional.
+        </p>
+      </div>
 
-    <!-- Mensagens -->
-    <div
-      v-else
-      class="flex flex-col p-4 space-y-2 max-h-[60vh] overflow-y-auto"
-    >
-      <div
-        v-for="(msg, index) in messages"
-        :key="index"
-        class="flex items-end gap-2"
-        :class="msg.fromUser ? 'flex-row' : 'flex-row-reverse'"
-      >
-        <img
-          :src="msg.fromUser ? userAvatar : botAvatar"
-          alt="Avatar"
-          class="w-8 h-8 rounded-full border border-white"
-        />
+      <!-- Mensagens -->
+      <template v-else>
         <div
-          :class="msg.fromUser ? 'bg-gray-700 self-start' : 'bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 self-end'"
-          class="p-2 rounded-lg max-w-[75%] whitespace-pre-wrap"
+          v-for="(msg, index) in messages"
+          :key="index"
+          class="flex items-end gap-2"
+          :class="msg.fromUser ? 'flex-row' : 'flex-row-reverse'"
         >
-          {{ msg.animatedText }}
+          <img
+            :src="msg.fromUser ? userAvatar : botAvatar"
+            class="w-8 h-8 rounded-full border border-white"
+          />
+          <div
+            :class="msg.fromUser
+              ? 'bg-gray-700'
+              : 'bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500'"
+            class="p-2 rounded-lg max-w-[75%] whitespace-pre-wrap"
+          >
+            {{ msg.animatedText }}
+          </div>
         </div>
-      </div>
 
-      <!-- Efeito "Digitando..." -->
-      <div v-if="loading" class="flex items-end gap-2 flex-row-reverse">
-        <img
-          :src="botAvatar"
-          alt="Avatar"
-          class="w-8 h-8 rounded-full border border-white"
-        />
-        <div class="bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 self-end p-2 rounded-lg max-w-[75%] animate-pulse">
-          Digitando...
+        <!-- "Digitando..." -->
+        <div v-if="loading" class="flex items-end gap-2 flex-row-reverse">
+          <img :src="botAvatar" class="w-8 h-8 rounded-full border border-white" />
+          <div class="bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 p-2 rounded-lg max-w-[75%] animate-pulse">
+            Digitando...
+          </div>
         </div>
-      </div>
+      </template>
     </div>
 
-    <!-- Campo de entrada -->
+    <!-- Input -->
     <form @submit.prevent="handleSubmit" class="flex border-t p-3 gap-2 bg-black">
       <textarea
         v-model="inputText"
-        placeholder="Digite algo... (Ctrl+Enter para enviar)"
         @keydown="handleKeydown"
+        placeholder="Digite algo... (Ctrl+Enter para enviar)"
         rows="2"
         class="flex-1 p-2 rounded bg-gray-800 text-white resize-none"
       ></textarea>
@@ -75,6 +88,17 @@
       </button>
     </form>
   </div>
+
+  <div
+    class="fixed bottom-4 right-4 w-16 h-16 cursor-pointer transition-all duration-500 z-40"
+    @click="toggleChat"
+  >
+    <img
+      :src="botAvatar"
+      alt="Mini Leandro"
+      class="w-full h-full rounded-full shadow-lg border border-white"
+    />
+  </div>
 </template>
 
 <script setup>
@@ -82,9 +106,15 @@ import { ref, watch } from 'vue';
 import portfolio from "@/portfolio";
 import { useChat } from "@/composables/useChat";
 
+const isChatOpen = ref(false);
+const inputText = ref('');
+
+const toggleChat = () => {
+  isChatOpen.value = !isChatOpen.value;
+};
+
 const userAvatar = ref(portfolio.iconsImages.userImage);
 const botAvatar = ref(portfolio.iconsImages.botImage);
-const inputText = ref('');
 
 const { messages, sendMessage, clearMessages, loading } = useChat();
 
@@ -98,11 +128,7 @@ watch(loading, (val) => {
 
 function handleSubmit() {
   const text = inputText.value.trim();
-  if (!text) {
-    console.warn("[MiniLeandro.vue] Tentativa de envio com texto vazio");
-    return;
-  }
-  console.log("[MiniLeandro.vue] Enviando:", text);
+  if (!text) return;
   sendMessage(text);
   inputText.value = '';
 }
