@@ -8,8 +8,14 @@ const router = createRouter({
             path: '/',
             name: 'main',
             component: MainView
-        }
+        },
+        {
+            path: '/stream-debug',
+            name: 'StreamDebug',
+            component: () => import('@/views/StreamDebugView.vue') // você vai criar esse arquivo
+          }
     ],
+      
     scrollBehavior(to, from, savedPosition) {
         if (to.hash && to.hash == '#landing-page') {
             return {

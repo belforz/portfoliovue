@@ -129,10 +129,10 @@
     </div>
   </div>
 
-  <!-- PopUp Component -->
+  <!-- Components acessórios -->
   <!-- <PopUp :visible="popUpVisible" href="https://belforzphotography.vercel.app"
 		text="Conheça o meu novo projeto de fotos" :showLanding="showLanding" @update:visible="popUpVisible = $event" /> -->
-  <ChatBot
+  <NewChatBot
     :visible="popUpVisible"
     :showLanding="showLanding"
     @update:visible="popUpVisible = $event"
@@ -153,10 +153,10 @@ import SplashView from "./SplashView.vue";
 import SkillsView from "./SkillsView.vue";
 
 import portfolio from "../portfolio";
-import ChatBot from "@/components/ChatBot.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import NewChatBot from "@/components/transitions/NewChatBot.vue";
 
 const router = useRouter();
 
