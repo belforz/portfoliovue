@@ -255,6 +255,22 @@ const experiences = [
 
 // --- 💻 Work Section ---
 const works = [
+      {
+        projectName: "MusicSom",
+        yearCompleted: "2025",
+        "description": "🎧 Musicsom é um sistema inteligente de recomendação musical criado para estimular descobertas fora da zona de conforto. Focado nas características técnicas e sensoriais dos álbuns, ele permite que o usuário escolha o que deseja ouvir com base em instrumentos, BPM, vocais e atmosfera — sem depender de gênero ou artista. o Musicsom é o seu curador musical técnico e personalizado. 🎶",
+        techStack: "SQL, BrModel",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/projeto-musicsomj"
+            }
+        ],
+        imageLink: "images/musicsom.png",
+        alignLeft: true,
+        isImportant: false
+    },
     {
         projectName: "Mini Leandro",
         yearCompleted: "2025",
