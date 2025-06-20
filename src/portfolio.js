@@ -46,15 +46,14 @@ const socialMediaLinks = {
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "Uma paixão por códigos, letras e problemas seja em Java, Javascript, PHP & outras. ",
+        "Uma paixão por códigos, letras e problemas seja em Python, JavaScript e outras. ",
         "Responsável, comunicativo, proativo, conciso nas palavras e amante de cinema viu? Estou estudando e trabalhando dentro do mundo do Desenvolvimento por mais de 1 ano e meio, atualmente estou na busca de um estágio ou vaga junior que adentre no mundo da Tecnologia."
     ], // Separated items are paragraphs
     techStack: [
-        "PHP",
+        "Python",
         "Java",
         "JavaScript",
-        "HTML",
-        "CSS",
+        "Frameworks JS",
         "SQL Language",
         "No-SQL"
     ],
