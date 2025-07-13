@@ -254,6 +254,22 @@ const experiences = [
 
 // --- 💻 Work Section ---
 const works = [
+    {
+        projectName: "Mini Leandro",
+        yearCompleted: "2025",
+        "description": "🤖 Mini Leandro é um agente inteligente desenvolvido para interagir de forma natural e dinâmica, utilizando IA generativa. Com um design minimalista e responsivo, ele combina Vue.js e Python para oferecer conversas fluidas e personalizadas. Ele evoluiu para atender intenções através de NLP e agir de maneira independente.",
+        techStack: "Generative AI, Python, Vue.js, Redis, Mongo",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/mini-leandro-back-end"
+            }
+        ],
+        imageLink: "images/noovo.png",
+        alignLeft: true,
+        isImportant: false
+    },
       {
         projectName: "MusicSom",
         yearCompleted: "2025",
@@ -267,22 +283,6 @@ const works = [
             }
         ],
         imageLink: "images/musicsom.png",
-        alignLeft: true,
-        isImportant: false
-    },
-    {
-        projectName: "Mini Leandro",
-        yearCompleted: "2025",
-        "description": "🤖 Mini Leandro é um chatbot inteligente desenvolvido para interagir de forma natural e dinâmica, utilizando IA generativa. Com um design minimalista e responsivo, ele combina Vue.js e Python para oferecer conversas fluidas e personalizadas. O seu assistente de Portfólio :)",
-        techStack: "Generative AI, Python, Vue.js, Redis, Mongo",
-        links: [
-            {
-                label: "GitHub",
-                type: "git",
-                url: "https://github.com/belforz/mini-leandro-back-end"
-            }
-        ],
-        imageLink: "images/mini-leandro.png",
         alignLeft: false,
         isImportant: false
     },
