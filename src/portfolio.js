@@ -255,6 +255,22 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
+        projectName: "Mini Photshop em C",
+        yearCompleted: "2025",
+        "description": "Mini Photshop é um editor de imagens leve e minimalista, desenvolvido em C. Ele permite que os usuários realizem edições básicas em suas fotos, como recorte, redimensionamento e ajuste de cores.",
+        techStack: "C, GTK",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/mini-photoshop-app"
+            }
+        ],
+        imageLink: "images/photoshopC.png",
+        alignLeft: false,
+        isImportant: false
+    },
+    {
         projectName: "Mini Leandro",
         yearCompleted: "2025",
         "description": "🤖 Mini Leandro é um agente inteligente desenvolvido para interagir de forma natural e dinâmica, utilizando IA generativa. Com um design minimalista e responsivo, ele combina Vue.js e Python para oferecer conversas fluidas e personalizadas. Ele evoluiu para atender intenções através de NLP e agir de maneira independente.",

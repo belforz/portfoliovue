@@ -8,6 +8,7 @@
         <div :class="['flex flex-col my-auto transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
             <div v-if="content.formEmbedLink">
                 <iframe :src="content.formEmbedLink" frameborder="0" marginheight="0" marginwidth="0" class="mb-10 min-h-screen w-full">Carregando</iframe>
+                
             </div>
             <div v-else class="space-y-8 mx-auto">
                 <h1 class="text-3xl font-extrabold text-center">Vamos nos falando..</h1>
