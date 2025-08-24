@@ -119,8 +119,9 @@ const experiences = [
         duration: "Set 2024 - (Atualmente)",
         bulletPoints: [
             "Manuntenção e Ampliação de Novos Negócios envolvendo Inteligência Artificial",
-            "Comunicando-se com tecnologias como Python, Node.js, React e outras",
-            "Integração com diversas áreas dentro da Vivo, aplica-se comunicação de áreas e versionamento de projetos"
+            "Stacks como Node, Python, Kubernetes, Docker",
+            "Integração com áreas de negócios da Vivo Brasil e Telefonica Espanha",
+            "Uso da Inteligência Artificial Generativa na automação de processos e a construção dessa em forma de Agentes para os mais diversos fins"
         ],
         hashtags: [
             "JavaScript",
