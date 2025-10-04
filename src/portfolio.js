@@ -255,6 +255,26 @@ const experiences = [
 
 // --- 💻 Work Section ---
 const works = [
+     {
+        projectName: "Loja de Vinis",
+        yearCompleted: "2025",
+        "description": "Loja de Vinis é uma plataforma de e-commerce desenvolvida para a venda de discos de vinil. Com um design minimalista e responsivo, a loja oferece uma experiência de compra intuitiva e agradável.",
+        techStack: "React, Typescript, Java, MongoDB",
+        links: [
+            {
+                label: "GitHub",
+                type: "git",
+                url: "https://github.com/belforz/v-disk-interface"
+            },{
+                label: "Website",
+                type: "external",
+                url: "https://v-disk-interface.vercel.app/"
+            }
+        ],
+        imageLink: "images/v-disk.png",
+        alignLeft: true,
+        isImportant: false
+    },
     {
         projectName: "Mini Photshop em C",
         yearCompleted: "2025",
